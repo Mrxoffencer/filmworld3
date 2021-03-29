@@ -1,0 +1,36 @@
+{% extends 'base.html' %} {% load static %} {% block banner %}
+<div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+        <div class="container">
+            <div class="left-align">
+                <img class="left-align" style="margin-top: 50vh; width: 40vw;" src="{% static 'img/logo2.png' %}" alt="Unsplashed background img 1">
+                <h3 class="left-align" style="color: black; font-weight: 500;">Django Developer & Cyber Security Researcher</h3>
+            </div>
+            <br><br>
+        </div>
+    </div>
+    <div class="parallax"><img src="{% static 'img/developer.jpg' %}" alt="Unsplashed background img 1"></div>
+</div>
+{% endblock %} {% block content %}
+<!--   Icon Section   -->
+
+
+
+<div class="col s12">
+    <h3>Developer Bio</h3>
+    <h6 class="">Hi, this is Mr.Xoffencer. I am a Python Django Developer, Made this website to show off my skills in Django Python FrameWork to the company for which i apply for a job as a Django Developer. I am also a Cyber Security Researcher and having Hall of
+        Fame in more then 5 internation companies as a Cyber Security Researcher. To know more about my self Please visit My Profile <a href="http://profile.xoffencer.com/">profile.xoffencer.com</a></h6>
+</div>
+
+
+<div class="col s12">
+    <h3 class="right-align">Website Bio</h3>
+    <h6 class="right-align" style="text-align: justify;">This website basically a clone of IMDB Website. It is Made with Open Source API server of IMDB which is a OMDB API in Django, a Python base Web FrameWork to develop website. In this wbsite you can search any movie available on IMDB server, when you
+        search any movie or webseries on this website first it will check its local sever for related querry and retrive resuts to client side, but if any data related to querry does not available in local server then it will check the data related to
+        that querry on Imdb server any retrive data to the client side and at the same time it also save that data in local database, so the next time if anybody try to search same data then the web application retrive that data from the local server
+        rather then check again at OMDB server. Bsically every time when some one try to search new data that is not present in local database then it will update its database with new data. In this website you can also rate any movie and add in your
+        watch list and comment on someone review and many more.</h6>
+</div>
+
+
+{% endblock %}
